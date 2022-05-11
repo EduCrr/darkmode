@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import styles from "./styles.module.scss";
 import Manager from "../../styles/Manager.module.scss";
 import { FaFileAlt } from "react-icons/fa";
+import Image from "next/image";
 
 export const ContentManager = () => {
   const QuillNoSSRWrapper = dynamic(import("react-quill"), {
@@ -56,13 +57,16 @@ export const ContentManager = () => {
           <QuillNoSSRWrapper modules={modules} formats={formats} theme="snow" />
           <input type="file" id="file" style={{ display: "none" }} />
           <div className={Manager.container}>
-            <label for="file">
-              <img
+            <label htmlFor="file">
+              <Image
+                alt=""
                 className={Manager.selected}
+                width={500}
+                height={400}
                 src="https://images.unsplash.com/photo-1593998066526-65fcab3021a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
               />
               <div className={Manager.middle}>
-                <div for="file" className={Manager.text}>
+                <div htmlFor="file" className={Manager.text}>
                   <FaFileAlt />
                 </div>
               </div>

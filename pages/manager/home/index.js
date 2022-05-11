@@ -8,7 +8,6 @@ import { Initial } from "../../../components/Initial";
 import Link from "next/link";
 
 const Home = () => {
-  const handleAddMore = () => {};
   return (
     <Default>
       <Initial />
@@ -17,9 +16,11 @@ const Home = () => {
           <div className={styles.title}>
             <h1>Products</h1>
             <Link href="produto/adicionar">
-              <button onClick={handleAddMore} className={Manager.managerButton}>
-                <FaPlus />
-              </button>
+              <a>
+                <button className={Manager.managerButton}>
+                  <FaPlus />
+                </button>
+              </a>
             </Link>
           </div>
           <ImtemManager />

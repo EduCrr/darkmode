@@ -29,16 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/manager/home.js"
-    ],
-    "/manager/produto/[slug]": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/manager/produto/[slug].js"
-    ],
-    "/manager/produto/adicionar": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/manager/produto/adicionar.js"
     ]
   },
   "ampFirstPages": []

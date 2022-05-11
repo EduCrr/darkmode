@@ -4,6 +4,7 @@ import styles from "./styles.module.scss";
 import "react-quill/dist/quill.snow.css";
 import dynamic from "next/dynamic";
 import { FaFileAlt } from "react-icons/fa";
+import Image from "next/image";
 
 const Adicionar = () => {
   const QuillNoSSRWrapper = dynamic(import("react-quill"), {
@@ -66,13 +67,16 @@ const Adicionar = () => {
             />
             <div className={Manager.container}>
               <input type="file" id="file" style={{ display: "none" }} />
-              <label for="file">
-                <img
+              <label htmlFor="file">
+                <Image
+                  height={350}
+                  width={450}
+                  alt=""
                   className={Manager.selected}
                   src="https://mladezj2cqfh.i.optimole.com/ZcuK1Xg.ECq7~2ccb/w:auto/h:auto/q:auto/https://www.take5.com.br/wp-content/themes/cardinal/images/default-thumb.png"
                 />
                 <div className={Manager.middle}>
-                  <div for="file" className={Manager.text}>
+                  <div htmlFor="file" className={Manager.text}>
                     <FaFileAlt />
                   </div>
                 </div>

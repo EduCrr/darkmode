@@ -4,6 +4,8 @@ import styles from "./styles.module.scss";
 import "react-quill/dist/quill.snow.css";
 import dynamic from "next/dynamic";
 import { useRef } from "react";
+import Image from "next/image";
+
 import {
   FaTrash,
   FaPlus,
@@ -77,8 +79,18 @@ const ProductSlug = () => {
       <div className={styles.singleProduct}>
         <div className={styles.left}>
           <Slider {...settings} ref={sliderRef}>
-            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
-            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
+            <Image
+              alt=""
+              width={450}
+              height={620}
+              src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+            />
+            <Image
+              alt=""
+              width={450}
+              height={620}
+              src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+            />
           </Slider>
           <div className={styles.arrows}>
             <div onClick={gotoPrev}>
@@ -132,7 +144,12 @@ const ProductSlug = () => {
               </button>
             </div>
             <div className={styles.singleImages}>
-              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
+              <Image
+                alt=""
+                height={80}
+                width={80}
+                src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+              />
               <div className={styles.title}>Product name</div>
               <div className={styles.btns}>
                 <button className={Manager.managerButton}>
@@ -140,24 +157,7 @@ const ProductSlug = () => {
                 </button>
               </div>
             </div>
-            <div className={styles.singleImages}>
-              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
-              <div className={styles.title}>Product name</div>
-              <div className={styles.btns}>
-                <button className={Manager.managerButton}>
-                  <FaTrash />
-                </button>
-              </div>
-            </div>
-            <div className={styles.singleImages}>
-              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
-              <div className={styles.title}>Product name</div>
-              <div className={styles.btns}>
-                <button className={Manager.managerButton}>
-                  <FaTrash />
-                </button>
-              </div>
-            </div>
+
             <div className={styles.save}>
               <button className={Manager.managerButton}>
                 <FaSave />
