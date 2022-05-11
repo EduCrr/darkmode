@@ -1,5 +1,10 @@
 {
+  "/": "pages/index.html",
+  "/manager/home": "pages/manager/home.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js"
+  "/manager/produto/adicionar": "pages/manager/produto/adicionar.html",
+  "/manager/produto/[slug]": "pages/manager/produto/[slug].html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
 }

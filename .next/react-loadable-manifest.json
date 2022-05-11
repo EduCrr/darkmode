@@ -1,8 +1,26 @@
 {
   "..\\components\\ContentManager\\index.js -> react-quill": {
-    "id": "..\\components\\ContentManager\\index.js -> react-quill",
+    "id": 1167,
     "files": [
-      "static/chunks/node_modules_react-quill_lib_index_js.js"
+      "static/chunks/framework-5693a7b498b378cc.js",
+      "static/chunks/eabe11fc.845d38c1329336e9.js",
+      "static/chunks/156.838809b71298914a.js"
+    ]
+  },
+  "manager\\produto\\[slug].js -> react-quill": {
+    "id": 1167,
+    "files": [
+      "static/chunks/framework-5693a7b498b378cc.js",
+      "static/chunks/eabe11fc.845d38c1329336e9.js",
+      "static/chunks/156.838809b71298914a.js"
+    ]
+  },
+  "manager\\produto\\adicionar.js -> react-quill": {
+    "id": 1167,
+    "files": [
+      "static/chunks/framework-5693a7b498b378cc.js",
+      "static/chunks/eabe11fc.845d38c1329336e9.js",
+      "static/chunks/156.838809b71298914a.js"
     ]
   }
 }
