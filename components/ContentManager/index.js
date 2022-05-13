@@ -29,11 +29,7 @@ export const ContentManager = () => {
       <div className={Manager.formContact}>
         <form>
           <input placeholder="Title" />
-          <ReactQuill
-            modules={modules}
-            theme="snow"
-            placeholder="Content goes here..."
-          />
+          <ReactQuill modules={modules} theme="snow" />
           <input type="file" id="file" style={{ display: "none" }} />
           <div className={Manager.container}>
             <label htmlFor="file">

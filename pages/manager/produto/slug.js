@@ -2,6 +2,7 @@ import { Default } from "../../../components/Default";
 import Manager from "../../../styles/Manager.module.scss";
 import styles from "./styles.module.scss";
 import "react-quill/dist/quill.snow.css";
+import "react-quill/dist/quill.bubble.css";
 import dynamic from "next/dynamic";
 import { useRef } from "react";
 import Image from "next/image";
@@ -33,7 +34,7 @@ const ProductSlug = () => {
   const gotoPrev = () => {
     sliderRef.current.slickPrev();
   };
-  //
+
   const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
   const modules = {
     toolbar: [
@@ -95,7 +96,6 @@ const ProductSlug = () => {
                   <ReactQuill
                     modules={modules}
                     theme="snow"
-                    placeholder="Content goes here..."
                     className={styles.notes}
                   />
                 </div>

@@ -36,11 +36,7 @@ const Adicionar = () => {
               <option>Categories</option>
               <option>Categories</option>
             </select>
-            <ReactQuill
-              modules={modules}
-              theme="snow"
-              placeholder="Content goes here..."
-            />
+            <ReactQuill modules={modules} theme="snow" />
             <div className={Manager.container}>
               <input type="file" id="file" style={{ display: "none" }} />
               <label htmlFor="file">

@@ -25,15 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/manager/produto/adicionar": [
+    "/manager/home": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/manager/produto/adicionar.js"
-    ],
-    "/manager/produto/slug": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/manager/produto/slug.js"
+      "static/chunks/pages/manager/home.js"
     ]
   },
   "ampFirstPages": []
