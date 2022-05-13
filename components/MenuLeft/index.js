@@ -8,35 +8,39 @@ export const MenuLeft = () => {
 
   return (
     <div className={styles.container}>
-      <ul>
-        <li
-          className={
-            router.pathname === "/manager/home"
-              ? styles.linkActive
-              : styles.link
-          }
-        >
-          <Link href="/manager/home">
-            <a>
-              <FaHome />
-            </a>
-          </Link>
-        </li>
-        <li
-          className={
-            router.pathname === "/manager/sobre"
-              ? styles.linkActive
-              : styles.link
-          }
-        >
-          <Link href="/manager/home">
-            <a>
-              <FaEdit />
-            </a>
-          </Link>
-        </li>
+      <div>
+        <ul>
+          <li
+            className={
+              router.pathname === "/manager/home"
+                ? styles.linkActive
+                : styles.link
+            }
+          >
+            <Link href="/manager/home">
+              <a>
+                <FaHome />
+              </a>
+            </Link>
+          </li>
+          <li
+            className={
+              router.pathname === "/manager/sobre"
+                ? styles.linkActive
+                : styles.link
+            }
+          >
+            <Link href="/manager/home">
+              <a>
+                <FaEdit />
+              </a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div>
         <Theme />
-      </ul>
+      </div>
     </div>
   );
 };

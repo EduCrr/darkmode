@@ -39,9 +39,8 @@ const ProductSlug = () => {
   const modules = {
     toolbar: [
       [{ font: [] }],
-      [{ header: [1, 2, 3, 4, 5, 6, false] }],
+      [{ header: [1, 2, 3, false] }],
       ["bold", "italic", "underline", "strike"],
-      [{ color: [] }, { background: [] }],
       [{ script: "sub" }, { script: "super" }],
       ["blockquote", "code-block"],
       [{ list: "ordered" }, { list: "bullet" }],

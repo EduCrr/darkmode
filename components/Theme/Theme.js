@@ -5,6 +5,12 @@ import { FaMoon, FaSun } from "react-icons/fa";
 export const Theme = () => {
   const [darkTheme, setDarkTheme] = useState("");
 
+  useEffect(() => {
+    if (!localStorage.getItem("theme")) {
+      setDarkTheme("light");
+    }
+  }, []);
+
   const handleToggle = () => {
     if (window.localStorage.getItem("theme") === "dark") {
       document.documentElement.removeAttribute("data-theme");
@@ -23,7 +29,9 @@ export const Theme = () => {
   return (
     <>
       <div>
-        <button onClick={handleToggle}>mudar</button>
+        <button onClick={handleToggle}>
+          {darkTheme === "light" ? "dark" : "light"}
+        </button>
       </div>
     </>
   );

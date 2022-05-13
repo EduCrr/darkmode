@@ -71,21 +71,33 @@ html ::-webkit-scrollbar-track {
   margin: 1rem 0px;
   width: 100% !important;
 }
+.ql-formats:first-child {
+  display: none !important;
+}
+// .ql-toolbar.ql-snow:nth-child(1) {
+//   display: none;
+// }
 .ql-toolbar.ql-snow,
 .ql-container.ql-snow {
   border: 0px !important;
 }
-
 .ql-editor {
   width: 100% !important;
 }
-
+.ql-editor .ql-video {
+  height: 250px !important;
+  width: auto !important;
+}
+.ql-snow .ql-tooltip {
+  z-index: 99;
+  position: absolute !important;
+  left: 0% !important;
+}
 .items {
   border-radius: 15px;
   background-color: var(--color-content-background);
   background: var(--color-content2-background);
 }
-
 .top {
   background-color: var(--color-menu-background);
   width: 100%;
@@ -103,7 +115,6 @@ html ::-webkit-scrollbar-track {
   top: 0;
   left: 0;
 }
-
 .linkName {
   width: 100%;
   padding: 20px;
@@ -112,14 +123,12 @@ html ::-webkit-scrollbar-track {
   color: var(--color-primary);
   margin: 2rem 0px;
 }
-
 input,
 textarea,
 select {
   background-color: var(--color-form-background);
   color: var(--color-primary);
 }
-
 .search {
   button,
   input {

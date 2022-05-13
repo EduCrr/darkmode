@@ -29,6 +29,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/manager/home.js"
+    ],
+    "/manager/produto/adicionar": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/manager/produto/adicionar.js"
     ]
   },
   "ampFirstPages": []

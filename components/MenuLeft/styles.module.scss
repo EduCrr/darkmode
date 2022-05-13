@@ -1,8 +1,10 @@
 .container {
   height: inherit;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+
   ul li {
     list-style: none;
     margin-bottom: 15px;
