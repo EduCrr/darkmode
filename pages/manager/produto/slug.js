@@ -33,7 +33,7 @@ const ProductSlug = () => {
   const gotoPrev = () => {
     sliderRef.current.slickPrev();
   };
-
+  //
   const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
   const modules = {
     toolbar: [
